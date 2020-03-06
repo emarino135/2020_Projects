@@ -14,7 +14,7 @@ public class Mark{
                 if(turnX){
                     if(b.getText().equals("")){
                         b.setText("X");
-                        
+                       
                     }
                 }
                 else{

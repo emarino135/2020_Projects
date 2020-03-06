@@ -33,7 +33,7 @@ public class GameBoard /*implements Runnable*/{
         //Thread t2 = new Thread(this);
         //t2.start();
         
-        //
+        
         
 
     }
@@ -141,7 +141,7 @@ public class GameBoard /*implements Runnable*/{
             }
             if(b9.getText().equals("X")){
                 countX++;
-            }
+            }//
             //COUNT O's
             if(b1.getText().equals("O")){
                 countO++;
@@ -266,7 +266,6 @@ public class GameBoard /*implements Runnable*/{
 
 
             
-
 
         
     }
