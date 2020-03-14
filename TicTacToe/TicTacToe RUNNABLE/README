@@ -1,2 +1,7 @@
 To run this download entire TicTacToe RUNNABLE folder and than click on the RunME.bat
-Currently only tested on windows machines. Will update for Mac soon.
+Currently only tested on windows machines.
+
+To run on mac 
+download TicTacToe
+type in terminal
+  SAVEDFOLDERPATH>java -jar TicTacToe.jar
