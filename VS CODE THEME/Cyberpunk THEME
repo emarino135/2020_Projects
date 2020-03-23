@@ -13,6 +13,42 @@
 
         "textMateRules": [
             {
+                "scope": "constant.numeric.dec.python",   //Python Numbers
+                "settings": {
+                    "foreground": "#ffffff",
+                }
+            },
+            {
+                "scope": "keyword.operator.logical.python",   //Python and or
+                "settings": {
+                    "foreground": "#ffffff",
+                }
+            },
+            {
+                "scope": "keyword.control.import.python",   //Python Import
+                "settings": {
+                    "foreground": "#00ffff",
+                }
+            },
+            {
+                "scope": "storage.type.function.python",   //Python Function
+                "settings": {
+                    "foreground": "#fb5b5b",
+                }
+            },
+            {
+                "scope": "keyword.control.flow.python",   //Python Control Structors
+                "settings": {
+                    "foreground": "#ff81ff",
+                }
+            },
+            {
+                "scope": "constant.language.python",   //Python Boolean
+                "settings": {
+                    "foreground": "#f7ff8a",
+                }
+            },
+            {
                 "scope": "comment.block",   //Comment Blocks
                 "settings": {
                     "foreground": "#cc9a50",
@@ -20,10 +56,29 @@
                 }
             },
             {
+                "scope": "storage.type.primitive.array.java",   //Arrays
+                "settings": {
+                    "foreground": "#ff81ff",
+                }
+            },
+            {
+                "scope": "invalid.illegal.character-not-allowed-here.html",//invalid html syntax
+                "settings":{
+                    "foreground": "#ff79e2",
+                    "fontStyle": "bold underline"
+                }
+            },
+            {
                 "scope": "keyword.other.package.java",   //Package
                 "settings": {
                     "foreground": "#00ecfd",
                     "fontStyle": "bold",
+                }
+            },
+            {
+                "scope": "invalid.deprecated.html", //deprecated html
+                "settings": {
+                    "foreground": "#ff00c8",
                 }
             },
             {
@@ -118,9 +173,8 @@
         "widget.shadow": "#ff0000",
         //"selection.background": "#5aa15a",
         //"descriptionForeground": "#e608e6",
-       // "errorForeground": "#fa00a7",
-        
-        
+        //"errorForeground": "#00fa0c",
+            
         // Text Colors — Colors inside a text document, such as the welcome page.
         "textBlockQuote.background": "#00d9ff",
         "textBlockQuote.border": "#00c3ff",
@@ -178,8 +232,8 @@
         "list.activeSelectionForeground": "#000000",
         //"list.dropBackground": "#ff0095",
         "list.focusBackground": "#00e1ff",
-        "list.focusForeground": "#000000",
-        "list.highlightForeground": "#ffffff",
+        "list.focusForeground": "#fffb00",
+        "list.highlightForeground": "#eeff00",
         "list.hoverBackground": "#000000",
        "list.hoverForeground": "#ff0000",
         "list.inactiveSelectionBackground": "#0000008e",
@@ -289,7 +343,8 @@
         "editorOverviewRuler.warningForeground": "#ff00f2",
         "editorOverviewRuler.infoForeground": "#ff00f2",
         */
-        //"editorError.foreground": "#ff0000",
+    
+        //"editorError.foreground": "#00ff55",
         //"editorError.border": "#ff00f2",
         "editorWarning.foreground": "#ff0000",
         //"editorWarning.border": "#ff0000",
