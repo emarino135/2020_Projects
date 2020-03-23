@@ -1,0 +1,101 @@
+from selenium import webdriver
+import time
+
+browser = webdriver.Chrome()
+browser.get("http://civclicker.sourceforge.net/civclicker/civclicker.html")
+
+popup = browser.switch_to_alert()
+popup.send_keys("The Robot Civilization")
+popup.accept()
+popup.send_keys("CivClickBot3000")
+popup.accept()
+
+
+def mine():
+    gatherFood = browser.find_element_by_css_selector("#basicResources > tbody > tr:nth-child(1) > td:nth-child(1) > button")
+    cutWood = browser.find_element_by_css_selector("#basicResources > tbody > tr:nth-child(2) > td:nth-child(1) > button")
+    mineStone = browser.find_element_by_css_selector("#basicResources > tbody > tr:nth-child(3) > td:nth-child(1) > button")
+    gatherFood.click()
+    cutWood.click()
+    mineStone.click()
+
+
+
+
+
+#open menus
+def openUpgradeMenu():
+    browser.find_element_by_css_selector("#selectUpgrades").click()
+def openBuildingsMenu():
+    browser.find_element_by_css_selector("#selectBuildings").click()
+
+#upgrades
+def upgradeMasonry():
+    global MasonryUpgraded
+    MasonryUpgraded = True
+    openUpgradeMenu()
+    time.sleep(.5)
+    print("Building masonry")
+    browser.find_element_by_css_selector("#masonry").click()
+#build
+def buildBarracks():
+    browser.find_element_by_css_selector("#barracksRow > td:nth-child(1) > button").click()
+def buildBarn():
+    openBuildingsMenu()
+    time.sleep(.5)
+    print("Building barn")
+    browser.find_element_by_css_selector("#barnRow > td:nth-child(1) > button").click()
+def buildWoodStockpile():
+    openBuildingsMenu()
+    time.sleep(.5)
+    print("Building Wood Stockpile")
+    browser.find_element_by_css_selector("#woodstockRow > td:nth-child(1) > button").click()
+def buildStoneStockpile():
+    openBuildingsMenu()
+    time.sleep(.5)
+    print("Building Stone Stockpile")
+    browser.find_element_by_css_selector("#stonestockRow > td:nth-child(1) > button").click()
+def buildSmithy():
+    openBuildingsMenu()
+    time.sleep(.5)
+    print("Building Smithy")
+
+
+
+food = 0
+wood = 0
+stone = 0
+
+maxFood = 0
+maxWood = 0
+maxStone = 0
+
+Smithy = 0
+MasonryUpgraded = False
+while True:
+    mine()
+    food = int(browser.find_element_by_css_selector("#food").text)
+    wood = int(browser.find_element_by_css_selector("#wood").text)
+    stone = int(browser.find_element_by_css_selector("#stone").text)
+        
+    maxFood = int(browser.find_element_by_css_selector("#maxfood").text)
+    maxWood = int(browser.find_element_by_css_selector("#maxwood").text)
+    maxStone = int(browser.find_element_by_css_selector("#maxstone").text)
+  
+    if ((wood==101)and(stone==101)) and (not(MasonryUpgraded)):
+        upgradeMasonry()
+        wood = int(browser.find_element_by_css_selector("#wood").text)
+        stone = int(browser.find_element_by_css_selector("#stone").text)
+    
+    #Storage full
+    if food == maxFood:
+        buildBarn()
+        wood = int(browser.find_element_by_css_selector("#wood").text)
+    if wood == maxWood:
+        buildWoodStockpile
+        wood = int(browser.find_element_by_css_selector("#wood").text)
+    if stone == maxStone:
+        buildStoneStockpile()
+        wood = int(browser.find_element_by_css_selector("#wood").text)
+    #Final     
+    print("Food: " + str(food) + ",Wood: " + str(wood) + ",Stone: " + str(stone))
