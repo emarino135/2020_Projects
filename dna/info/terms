@@ -1,0 +1,16 @@
+Deoxyribo Nucliec Acid (DNA)
+    NucleoBases:
+        A = Adenine
+        T = Thymine 
+        C = Cytosine
+        G = Gaunine
+Ribo Nucliec Acid (RNA)
+    NucleoBases:
+        A = Adenine
+        U = Uracil 
+        C = Cytosine
+        G = Gaunine
+
+
+Sequence Source's :
+    National Center for Biotechnology Information

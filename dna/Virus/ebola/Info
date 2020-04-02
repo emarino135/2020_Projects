@@ -1,0 +1,36 @@
+Ebola virus isolate Ebola virus/H. sapiens-tc/COD/1995/Kikwit-9510622, complete genome
+
+
+
+LOCUS       KU182909               18959 bp    cRNA    linear   VRL 22-DEC-2015
+DEFINITION  Ebola virus isolate Ebola virus/H.
+            sapiens-tc/COD/1995/Kikwit-9510622, complete genome.
+ACCESSION   KU182909
+VERSION     KU182909.1
+DBLINK      BioProject: PRJNA242964
+KEYWORDS    .
+SOURCE      Ebola virus (EBOV)
+  ORGANISM  Ebola virus
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Mononegavirales; Filoviridae; Ebolavirus.
+REFERENCE   1  (bases 1 to 18959)
+  AUTHORS   Das,S.R., Shabman,R., Halpin,R.A., Akopov,A., Fedorova,N., Puri,V.,
+            Stockwell,T., Amedeo,P., Bishop,B., Katzel,D., Schobel,S.,
+            Shrivastava,S., Brasel,T., Yun,N., Paessler,S., Dowling,W. and
+            Barrett,A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-NOV-2015) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     This work was supported by the National Institute of Allergy and
+            Infectious Diseases (NIAID), Genome Center for Infectious Diseases
+            (GCID) program and Department of Homeland Security (DHS).
+            Sequence data was generated using next-generation sequencing
+            platforms. Primers and barcodes were trimmed before assembly unless
+            otherwise stated in the feature section.
+            
+            ##Genome-Assembly-Data-START##
+            Current Finishing Status :: Finished
+            Assembly Method          :: clc_ref_assemble_long v. 3.22.55705
+            Genome Coverage          :: 2573.4x
+            Sequencing Technology    :: Sanger;Illumina;Ion Torrent
+            ##Genome-Assembly-Data-END##

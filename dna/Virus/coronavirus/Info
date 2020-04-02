@@ -1,0 +1,32 @@
+GenBank: MN988668.1
+Severe acute respiratory syndrome coronavirus 2 isolate 2019-nCoV WHU01, complete genome
+
+
+LOCUS       MN988668               29881 bp    RNA     linear   VRL 11-FEB-2020
+DEFINITION  Severe acute respiratory syndrome coronavirus 2 isolate 2019-nCoV
+            WHU01, complete genome.
+ACCESSION   MN988668
+VERSION     MN988668.1
+KEYWORDS    .
+SOURCE      Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)
+  ORGANISM  Severe acute respiratory syndrome coronavirus 2
+            Viruses; Riboviria; Nidovirales; Cornidovirineae; Coronaviridae;
+            Orthocoronavirinae; Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (bases 1 to 29881)
+  AUTHORS   Chen,L., Liu,W., Zhang,Q., Xu,K., Ye,G., Wu,W., Sun,Z., Liu,F.,
+            Wu,K., Mei,Y., Zhang,W., Chen,Y., Li,Y., Shi,M., Lan,K. and Liu,Y.
+  TITLE     RNA based mNGS approach identifies a novel human coronavirus from
+            two individual pneumonia cases in 2019 Wuhan outbreak
+  JOURNAL   Emerg Microbes Infect (2019) In press
+REFERENCE   2  (bases 1 to 29881)
+  AUTHORS   Chen,L., Liu,W., Zhang,Q., Xu,K., Ye,G., Wu,W., Sun,Z., Liu,F.,
+            Wu,K., Mei,Y., Zhang,W., Chen,Y., Li,Y., Shi,M., Lan,K. and Liu,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JAN-2020) State Key Laboratory of Virology, Wuhan
+            University, Bayi Road, Wuchang District, Wuhan, Hubei 430072, P.R.
+            China
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: MEGAHIT v. 2015; DIAMOND v. 2015;
+                                     MetaPh1An2 v. 2015
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
